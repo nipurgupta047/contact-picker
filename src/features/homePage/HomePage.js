@@ -9,7 +9,6 @@ export default function HomePage() {
      async function getContacts() {
           console.log('clicked');
           contactStr = ''
-          setMultipleContact('')
           try {
                const contacts = await navigator.contacts.select(props, opts);
                setContact(contacts);
