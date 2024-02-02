@@ -34,7 +34,7 @@ export default function HomePage() {
                          contactStr+=','
                          contactStr+=ele.tel
                          // if(index === (contact.length-1))
-                         // setMultipleContact(contactStr)
+                         setMultipleContact(contactStr)
                     }
                     return <tr>
                               <td style={{'border':'1px solid black', 'padding':'5px 12px'}}>{ele.name}</td> 
