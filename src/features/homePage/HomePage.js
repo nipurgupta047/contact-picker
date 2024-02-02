@@ -4,7 +4,6 @@ export default function HomePage() {
      const props = ["name", "email", "tel", "address", "icon"];
      const opts = { multiple: true };
      const [contact, setContact] = useState([])
-     const [multipleContact, setMultipleContact] = useState('')
      let contactStr = '' 
 
      async function getContacts() {
@@ -33,8 +32,6 @@ export default function HomePage() {
                     else{
                          contactStr+=','
                          contactStr+=ele.tel
-                         // if(index === (contact.length-1))
-                         setMultipleContact(contactStr)
                     }
                     return <tr>
                               <td style={{'border':'1px solid black', 'padding':'5px 12px'}}>{ele.name}</td> 
@@ -48,8 +45,8 @@ export default function HomePage() {
           </table>
           <br/>
           { 
-               multipleContact?
-               <a href={`sms:${multipleContact}?body=Hey!%20This%20message%20is%20to%20tell%20you%20about%20TrueCoverage`}>Send SMS to All</a>
+               contactStr?
+               <a href={`sms:${contactStr}?body=Hey!%20This%20message%20is%20to%20tell%20you%20about%20TrueCoverage`}>Send SMS to All</a>
                :<></>
           }
 
