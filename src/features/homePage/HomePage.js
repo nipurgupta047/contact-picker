@@ -33,7 +33,7 @@ export default function HomePage() {
                     else{
                          contactStr+=','
                          contactStr+=ele.tel
-                         if(index === (contact.length-1))
+                         // if(index === (contact.length-1))
                          setMultipleContact(contactStr)
                     }
                     return <tr>
@@ -47,11 +47,11 @@ export default function HomePage() {
           }
           </table>
           <br/>
-          {/* { 
+          { 
                multipleContact?
                <a href={`sms:${multipleContact}?body=Hey!%20This%20message%20is%20to%20tell%20you%20about%20TrueCoverage`}>Send SMS to All</a>
                :<></>
-          } */}
+          }
 
      </div>
      )
