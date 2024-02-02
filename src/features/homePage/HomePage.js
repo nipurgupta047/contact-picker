@@ -34,7 +34,7 @@ export default function HomePage() {
                          contactStr+=','
                          contactStr+=ele.tel
                          // if(index === (contact.length-1))
-                         setMultipleContact(contactStr)
+                         // setMultipleContact(contactStr)
                     }
                     return <tr>
                               <td style={{'border':'1px solid black', 'padding':'5px 12px'}}>{ele.name}</td> 
@@ -48,8 +48,8 @@ export default function HomePage() {
           </table>
           <br/>
           { 
-               multipleContact?
-               <a href={`sms:${multipleContact}?body=Hey!%20This%20message%20is%20to%20tell%20you%20about%20TrueCoverage`}>Send SMS to All</a>
+               contactStr?
+               <a href={`sms:${contactStr}?body=Hey!%20This%20message%20is%20to%20tell%20you%20about%20TrueCoverage`}>Send SMS to All</a>
                :<></>
           }
 
