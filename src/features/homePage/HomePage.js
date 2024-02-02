@@ -48,8 +48,8 @@ export default function HomePage() {
           </table>
           <br/>
           { 
-               contactStr?
-               <a href={`sms:${contactStr}?body=Hey!%20This%20message%20is%20to%20tell%20you%20about%20TrueCoverage`}>Send SMS to All</a>
+               multipleContact?
+               <a href={`sms:${multipleContact}?body=Hey!%20This%20message%20is%20to%20tell%20you%20about%20TrueCoverage`}>Send SMS to All</a>
                :<></>
           }
 
