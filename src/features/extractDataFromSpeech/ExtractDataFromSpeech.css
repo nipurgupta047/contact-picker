@@ -1,0 +1,78 @@
+#addNewTemplateButton{
+     margin-top: 20px;
+     margin-left: 30px;
+     display: flex;
+     align-items: center;
+     width: fit-content;
+     border: none;
+     padding: 10px 18px;
+     border-radius: 5px;
+     background-color: rgb(4, 96, 150);
+     transition: 0.1s transform linear;
+}
+
+#addNewTemplateButton:hover{
+     transform: scale(0.95);
+     cursor: pointer;
+}
+
+#extractDataFromSpeechMainDiv{
+     /* background-color: rgb(185, 223, 236); */
+     background-color: white;
+     height: 100vh;
+     padding-top: 40px;
+}
+
+.newPrompt{
+     border: 1px solid rgb(0, 77, 111);
+     border-radius: 5px;
+     margin: 10px 10px;
+}
+
+.uploadHeadingTitle{
+     font-size: medium;
+     font-weight: bold;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     margin-left: 10px;
+     margin-right: 40px;
+     color: rgb(0, 76, 107);
+}
+
+.uploadFileDiv{
+     /* display: flex; */
+     /* justify-content: center; */
+     /* align-items: center; */
+     /* flex-direction: column; */
+     margin-left: 30px;
+     margin-bottom: 30px;
+}
+
+.data{
+     border: 1px solid rgb(0, 77, 111);
+     border-radius: 5px;
+     margin: 20px 30px;
+     /* margin-left: 30px;
+     margin-right: 30px; */
+     padding: 5px 5px;
+}
+
+.headingTitle{
+     font-size: medium;
+     font-weight: bold;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     margin-left: 10px;
+     color: rgb(0, 76, 107);
+}
+
+.subHeadingTitle{
+     font-size:medium;
+     font-weight: bold;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     margin-right: 20px;
+     color: rgb(255, 64, 0);
+}
+
+.subData{
+     margin-left: 60px;
+     margin-top: 10px;
+}
