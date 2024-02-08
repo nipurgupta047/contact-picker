@@ -36,7 +36,7 @@ function addNewTemplate() {
       </div>
       {
         templates.map((ele, idx)=>{
-          return <Template idx={idx} ele={ele} />
+          return <Template idx={idx} key={idx} ele={ele} />
         })
       }
     </div>
